@@ -4,13 +4,8 @@
 mkdir downloads
 
 
-# Download deb files
-wget https://download.sublimetext.com/sublime-text_build-3126_amd64.deb -O downloads/sublime.deb
-wget https://atom.io/download/deb -O downloads/atom.deb
-wget https://downloads.slack-edge.com/linux_releases/slack-desktop-2.3.4-amd64.deb -O downloads/slack.deb
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -O downloads/chrome.deb
-wget https://github.com/Thomas101/wmail/releases/download/v2.0.0/WMail_2_0_0_linux_x86_64.deb -O downloads/wmail.deb
-wget http://kdl.cc.ksosoft.com/wps-community/download/a21/wps-office_10.1.0.5672~a21_amd64.deb -O downloads/wps.deb
+# Download deb files from list and add them to downloads folder
+wget -P downloads --content-disposition -i apps.txt
 
 
 # Entering downloads folder and installing everything (.deb files) with a loop
@@ -46,7 +41,7 @@ sudo apt update
 
 
 # 4. Install Spotify
-sudo apt install -y -f spotify-client gnome-tweak-tool plank adapta-gtk-theme virtualbox git-core
+sudo apt install -y spotify-client gnome-tweak-tool plank adapta-gtk-theme virtualbox git-core
 
 
 # In case packages are old, upgrade
@@ -65,3 +60,7 @@ cd /tmp
 git clone https://github.com/daniruiz/Flat-Remix
 mkdir -p ~/.icons
 mv "Flat-Remix/Flat Remix" ~/.icons
+
+# Installing all remaining dependencies
+
+sudo apt install -f
