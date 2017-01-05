@@ -40,14 +40,8 @@ sudo apt update
 ############################################################################################
 
 
-# 4. Install Spotify
-sudo apt install -y spotify-client gnome-tweak-tool plank adapta-gtk-theme virtualbox git-core
-
-
-# In case packages are old, upgrade
-sudo apt update
-sudo apt upgrade
-sudo apt autoremove
+# Install important apps from default and added repositories
+sudo apt install -y -f spotify-client gnome-tweak-tool plank adapta-gtk-theme virtualbox git
 
 
 ############################################################################################
@@ -61,6 +55,10 @@ git clone https://github.com/daniruiz/Flat-Remix
 mkdir -p ~/.icons
 mv "Flat-Remix/Flat Remix" ~/.icons
 
-# Installing all remaining dependencies
+# Installing all remaining dependencies and updating in case there is any outdated apps
 
-sudo apt install -f
+sudo apt install -y -f
+
+sudo apt update
+sudo apt -y upgrade
+sudo apt -y autoremove
