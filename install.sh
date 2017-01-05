@@ -36,16 +36,6 @@ sudo add-apt-repository -y ppa:tista/adapta
 # Update
 sudo apt update
 
-
-############################################################################################
-
-
-# Install important apps from default and added repositories
-sudo apt install -y -f spotify-client gnome-tweak-tool plank adapta-gtk-theme virtualbox git
-
-
-############################################################################################
-
 # Custom installations
 
 #Flat-Remix icon theme
@@ -54,6 +44,18 @@ cd /tmp
 git clone https://github.com/daniruiz/Flat-Remix
 mkdir -p ~/.icons
 mv "Flat-Remix/Flat Remix" ~/.icons
+
+
+
+############################################################################################
+
+# Install important apps from default and added repositories
+
+sudo apt install -f spotify-client gnome-tweak-tool plank adapta-gtk-theme virtualbox git
+
+
+############################################################################################
+
 
 # Installing all remaining dependencies and updating in case there is any outdated apps
 
