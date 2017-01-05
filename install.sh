@@ -1,19 +1,11 @@
 #!/bin/bash
 
-# Create a "downloads" folder
-mkdir downloads
-
-
 # Download deb files from list and add them to downloads folder
 wget -P downloads --content-disposition -i apps.txt
 
 
-# Entering downloads folder and installing everything (.deb files) with a loop
-cd downloads
-
-PROGRAMS=$(ls *deb)
-
-for PROGRAM in $PROGRAMS
+# installing all deb files with a loop
+for PROGRAM in downloads/*.deb
 do
   sudo dpkg -i ${PROGRAM}
 done
