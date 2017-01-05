@@ -33,6 +33,9 @@ sudo add-apt-repository -y ppa:ricotz/docky #
 # Adapta theme repository
 sudo add-apt-repository -y ppa:tista/adapta
 
+# Krita repository
+sudo add-apt-repository ppa:kritalime/ppa
+
 ############################################################################################
 
 
@@ -49,7 +52,7 @@ mv "Flat-Remix/Flat Remix" ~/.icons
 
 # Install important apps from default and added repositories
 sudo apt update
-sudo apt install -f -y spotify-client gnome-tweak-tool plank adapta-gtk-theme virtualbox git
+sudo apt install -f -y git spotify-client gnome-tweak-tool plank adapta-gtk-theme virtualbox filezilla krita
 
 ############################################################################################
 
