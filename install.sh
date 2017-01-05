@@ -18,11 +18,11 @@ do
   sudo dpkg -i ${PROGRAM}
 done
 
+# Install missing dependencies
+sudo apt install -y -f
+
 
 ############################################################################################
-
-# Installing apps  from repositories
-sudo apt update
 
 # Add the Spotify repository signing key to be able to verify downloaded packages
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys BBEBDCB318AD50EC6865090613B00F1FD2C19886 && echo deb http://repository.spotify.com stable non-free | sudo tee /etc/apt/sources.list.d/spotify.list
@@ -33,34 +33,28 @@ sudo add-apt-repository -y ppa:ricotz/docky #
 # Adapta theme repository
 sudo add-apt-repository -y ppa:tista/adapta
 
-# Update
-sudo apt update
+############################################################################################
+
 
 # Custom installations
 
 #Flat-Remix icon theme
-
 cd /tmp
 git clone https://github.com/daniruiz/Flat-Remix
 mkdir -p ~/.icons
 mv "Flat-Remix/Flat Remix" ~/.icons
 
 
-
 ############################################################################################
 
 # Install important apps from default and added repositories
-
+sudo apt update
 sudo apt install -f spotify-client gnome-tweak-tool plank adapta-gtk-theme virtualbox git
-
 
 ############################################################################################
 
 
-# Installing all remaining dependencies and updating in case there is any outdated apps
-
-sudo apt install -y -f
-
+# Updating in case there is any outdated apps
 sudo apt update
 sudo apt -y upgrade
 sudo apt -y autoremove
