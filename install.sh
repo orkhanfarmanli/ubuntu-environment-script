@@ -10,6 +10,7 @@ wget https://atom.io/download/deb -O downloads/atom.deb
 wget https://downloads.slack-edge.com/linux_releases/slack-desktop-2.3.4-amd64.deb -O downloads/slack.deb
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -O downloads/chrome.deb
 wget https://github.com/Thomas101/wmail/releases/download/v2.0.0/WMail_2_0_0_linux_x86_64.deb -O downloads/wmail.deb
+wget http://kdl.cc.ksosoft.com/wps-community/download/a21/wps-office_10.1.0.5672~a21_amd64.deb -O downloads/wps.deb
 
 
 # Entering downloads folder and installing everything (.deb files) with a loop
@@ -32,10 +33,10 @@ sudo apt update
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys BBEBDCB318AD50EC6865090613B00F1FD2C19886 && echo deb http://repository.spotify.com stable non-free | sudo tee /etc/apt/sources.list.d/spotify.list
 
 # Plank repository
-sudo add-apt-repository ppa:ricotz/docky #
+sudo add-apt-repository -y ppa:ricotz/docky #
 
 # Adapta theme repository
-sudo add-apt-repository ppa:tista/adapta
+sudo add-apt-repository -y ppa:tista/adapta
 
 # Update
 sudo apt update
@@ -45,7 +46,7 @@ sudo apt update
 
 
 # 4. Install Spotify
-sudo apt install -y spotify-client gnome-tweak-tool plank adapta-gtk-theme virtualbox git-core
+sudo apt install -y -f spotify-client gnome-tweak-tool plank adapta-gtk-theme virtualbox git-core
 
 
 # In case packages are old, upgrade
