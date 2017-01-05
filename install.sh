@@ -49,7 +49,7 @@ mv "Flat-Remix/Flat Remix" ~/.icons
 
 # Install important apps from default and added repositories
 sudo apt update
-sudo apt install -f spotify-client gnome-tweak-tool plank adapta-gtk-theme virtualbox git
+sudo apt install -f -y spotify-client gnome-tweak-tool plank adapta-gtk-theme virtualbox git
 
 ############################################################################################
 
