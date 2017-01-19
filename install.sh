@@ -53,3 +53,6 @@ sudo apt install -f -y git spotify-client gnome-tweak-tool plank adapta-gtk-them
 sudo apt update
 sudo apt -y upgrade
 sudo apt -y autoremove
+
+# Removing downloads folder
+sudo rm -rf downloads

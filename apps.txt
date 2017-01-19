@@ -4,3 +4,4 @@ https://downloads.slack-edge.com/linux_releases/slack-desktop-2.3.4-amd64.deb
 https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 https://github.com/Thomas101/wmail/releases/download/v2.0.0/WMail_2_0_0_linux_x86_64.deb
 http://kdl.cc.ksosoft.com/wps-community/download/a21/wps-office_10.1.0.5672~a21_amd64.deb
+http://www.valentina-db.com/en/studio/download/current/vstudio_x64_lin-deb?format=raw
