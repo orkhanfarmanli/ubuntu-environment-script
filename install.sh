@@ -31,6 +31,9 @@ sudo add-apt-repository -y ppa:kritalime/ppa
 # Albert repository
 sudo add-apt-repository ppa:nilarimogard/webupd8
 
+# KDE Connect repository
+sudo add-apt-repository ppa:vikoadi/ppa
+
 
 ############################################################################################
 
@@ -48,7 +51,7 @@ mv "Flat-Remix/Flat Remix" ~/.icons
 
 # Install important apps from default and added repositories
 sudo apt update
-sudo apt install -f -y git spotify-client gnome-tweak-tool plank adapta-gtk-theme virtualbox filezilla krita shutter albert
+sudo apt install -f -y git spotify-client gnome-tweak-tool plank adapta-gtk-theme virtualbox filezilla krita shutter albert kdeconnect indicator-kdeconnect
 
 ############################################################################################
 
