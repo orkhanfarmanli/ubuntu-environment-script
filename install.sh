@@ -28,6 +28,10 @@ sudo add-apt-repository -y ppa:tista/adapta
 # Krita repository
 sudo add-apt-repository -y ppa:kritalime/ppa
 
+# Albert repository
+sudo add-apt-repository ppa:nilarimogard/webupd8
+
+
 ############################################################################################
 
 
@@ -44,7 +48,7 @@ mv "Flat-Remix/Flat Remix" ~/.icons
 
 # Install important apps from default and added repositories
 sudo apt update
-sudo apt install -f -y git spotify-client gnome-tweak-tool plank adapta-gtk-theme virtualbox filezilla krita shutter
+sudo apt install -f -y git spotify-client gnome-tweak-tool plank adapta-gtk-theme virtualbox filezilla krita shutter albert
 
 ############################################################################################
 
