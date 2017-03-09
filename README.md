@@ -1,1 +1,1 @@
-# Environment setup script for Ubuntu
+# Environment setup script for Debian based distros
