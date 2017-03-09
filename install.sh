@@ -29,10 +29,10 @@ sudo add-apt-repository -y ppa:tista/adapta
 sudo add-apt-repository -y ppa:kritalime/ppa
 
 # Albert repository
-sudo add-apt-repository ppa:nilarimogard/webupd8
+sudo add-apt-repository -y ppa:nilarimogard/webupd8
 
 # KDE Connect repository
-sudo add-apt-repository ppa:vikoadi/ppa
+sudo add-apt-repository -y ppa:vikoadi/ppa
 
 
 ############################################################################################
